@@ -10,7 +10,6 @@ char *rcs_lua="$Id: $";
 #include "lua.h"
 #include "lualib.h"
 
-
 void main (int argc, char *argv[])
 {
  int i;
@@ -19,7 +18,7 @@ void main (int argc, char *argv[])
  mathlib_open ();
  if (argc < 2)
  {
-   char buffer[250];
+   char buffer[2048];
    while (gets(buffer) != 0)
      lua_dostring(buffer);
  }
@@ -27,5 +26,3 @@ void main (int argc, char *argv[])
    for (i=1; i<argc; i++)
     lua_dofile (argv[i]);
 }
-
-

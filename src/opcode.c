@@ -8,9 +8,9 @@ char *rcs_opcode="$Id: opcode.c,v 1.4 1994/04/13 21:37:20 celes Exp celes $";
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#ifdef __GNUC__
-#include <floatingpoint.h>
-#endif
+
+/* stdlib.h does not have this in SunOS */
+extern double strtod(const char *, char **);
 
 #include "mm.h"
 

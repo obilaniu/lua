@@ -345,4 +345,3 @@ void lua_next (void)
   }
  }
 }
-
