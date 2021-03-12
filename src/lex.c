@@ -1,4 +1,4 @@
-char *rcs_lex = "$Id: lex.c,v 1.3 1993/12/28 16:42:29 roberto Exp celes $";
+char *rcs_lex = "$Id: lex.c,v 2.1 1994/04/15 19:00:28 celes Exp $";
 /*$Log: lex.c,v $
  * Revision 2.1  1994/04/15  19:00:28  celes
  * Retirar chamada da funcao lua_findsymbol associada a cada

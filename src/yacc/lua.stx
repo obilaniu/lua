@@ -1,6 +1,6 @@
 %{
 
-char *rcs_luastx = "$Id: lua.stx,v 2.3 1994/04/19 19:06:15 celes Exp celes $";
+char *rcs_luastx = "$Id: lua.stx,v 2.4 1994/04/20 16:22:21 celes Exp $";
 
 #include <stdio.h>
 #include <stdlib.h>

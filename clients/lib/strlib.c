@@ -3,7 +3,7 @@
 ** String library to LUA
 */
 
-char *rcs_strlib="$Id: strlib.c,v 1.1 1993/12/17 18:41:19 celes Exp celes $";
+char *rcs_strlib="$Id: strlib.c,v 1.2 1994/03/28 15:14:02 celes Exp $";
 
 #include <stdlib.h>
 #include <string.h>

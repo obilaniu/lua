@@ -3,7 +3,7 @@
 ** Input/output library to LUA
 */
 
-char *rcs_iolib="$Id: iolib.c,v 1.3 1994/03/28 15:14:02 celes Exp celes $";
+char *rcs_iolib="$Id: iolib.c,v 1.4 1994/04/25 20:11:23 celes Exp $";
 
 #include <stdlib.h>
 #include <string.h>

@@ -1,6 +1,6 @@
 /*
 ** TeCGraf - PUC-Rio
-** $Id: opcode.h,v 1.4 1994/04/13 21:37:20 celes Exp celes $
+** $Id: opcode.h,v 2.1 1994/04/20 22:07:57 celes Exp $
 */
 
 #ifndef opcode_h

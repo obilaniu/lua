@@ -1,7 +1,7 @@
 /*
 ** Module to control static tables
 ** TeCGraf - PUC-Rio
-** $Id: table.h,v 1.2 1993/12/22 21:15:16 roberto Exp celes $
+** $Id: table.h,v 2.1 1994/04/20 22:07:57 celes Exp $
 */
 
 #ifndef table_h

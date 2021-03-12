@@ -3,7 +3,7 @@
 ** TecCGraf - PUC-Rio
 */
 
-char *rcs_opcode="$Id: opcode.c,v 1.4 1994/04/13 21:37:20 celes Exp celes $";
+char *rcs_opcode="$Id: opcode.c,v 2.1 1994/04/20 22:07:57 celes Exp $";
 
 #include <stdio.h>
 #include <stdlib.h>

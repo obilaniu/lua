@@ -4,7 +4,7 @@
 ** facilities.
 */
 
-char *rcs_inout="$Id: inout.c,v 1.1 1993/12/17 18:41:19 celes Exp roberto $";
+char *rcs_inout="$Id: inout.c,v 1.2 1993/12/22 21:15:16 roberto Exp $";
 
 #include <stdio.h>
 #include <string.h>
