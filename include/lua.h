@@ -2,7 +2,7 @@
 ** LUA - Linguagem para Usuarios de Aplicacao
 ** Grupo de Tecnologia em Computacao Grafica
 ** TeCGraf - PUC-Rio
-** $Id: lua.h,v 3.27 1996/04/25 14:10:00 roberto Exp roberto $
+** $Id: lua.h,v 3.28 1996/05/06 14:32:59 roberto Exp $
 */
 
 

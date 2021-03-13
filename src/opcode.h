@@ -1,6 +1,6 @@
 /*
 ** TeCGraf - PUC-Rio
-** $Id: opcode.h,v 3.19 1996/03/06 13:11:23 roberto Exp $
+** $Id: opcode.h,v 3.20 1996/03/15 13:13:13 roberto Exp $
 */
 
 #ifndef opcode_h

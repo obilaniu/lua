@@ -1,7 +1,7 @@
 /*
 ** mem.c
 ** memory manager for lua
-** $Id: mem.h,v 1.6 1996/03/21 18:54:29 roberto Exp roberto $
+** $Id: mem.h,v 1.7 1996/04/22 18:00:37 roberto Exp $
 */
  
 #ifndef mem_h

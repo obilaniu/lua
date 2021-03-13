@@ -1,7 +1,7 @@
 /*
 ** lex.h
 ** TecCGraf - PUC-Rio
-** $Id: lex.h,v 1.1 1996/02/13 17:30:39 roberto Exp roberto $
+** $Id: lex.h,v 1.2 1996/02/14 13:35:51 roberto Exp $
 */
 
 #ifndef lex_h

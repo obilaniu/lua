@@ -3,7 +3,7 @@
 ** load bytecodes from files
 */
 
-char* rcs_undump="$Id: undump.c,v 1.13 1996/03/12 20:00:40 lhf Exp lhf $";
+char* rcs_undump="$Id: undump.c,v 1.14 1996/03/14 17:31:15 lhf Exp $";
 
 #include <stdio.h>
 #include <string.h>

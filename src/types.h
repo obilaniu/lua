@@ -1,6 +1,6 @@
 /*
 ** TeCGraf - PUC-Rio
-** $Id: types.h,v 1.3 1995/02/06 19:32:43 roberto Exp roberto $
+** $Id: types.h,v 1.4 1996/02/07 14:13:17 roberto Exp $
 */
 
 #ifndef types_h
