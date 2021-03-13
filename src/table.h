@@ -1,7 +1,7 @@
 /*
 ** Module to control static tables
 ** TeCGraf - PUC-Rio
-** $Id: table.h,v 2.20 1996/03/14 15:57:19 roberto Exp roberto $
+** $Id: table.h,v 2.24 1997/04/07 14:48:53 roberto Exp roberto $
 */
 
 #ifndef table_h
@@ -12,7 +12,7 @@
 
 typedef struct
 {
- Object  object;
+ TObject  object;
  TaggedString *varname;
 } Symbol;
 
@@ -28,10 +28,11 @@ Word  luaI_findsymbolbyname (char *name);
 Word  luaI_findsymbol      (TaggedString *t);
 Word  luaI_findconstant    (TaggedString *t);
 Word  luaI_findconstantbyname (char *name);
+int luaI_globaldefined (char *name);
+void luaI_nextvar (void);
 TaggedString *luaI_createfixedstring  (char *str);
-int   lua_markobject      (Object *o);
-int luaI_ismarked (Object *o);
-Long luaI_collectgarbage (void);
+int   lua_markobject      (TObject *o);
+int luaI_ismarked (TObject *o);
 void  lua_pack            (void);
 
 

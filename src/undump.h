@@ -1,10 +1,14 @@
 /*
 ** undump.h
 ** definitions for lua decompiler
-** $Id: undump.h,v 1.2 1996/03/11 21:59:41 lhf Exp lhf $
+** $Id: undump.h,v 1.5 1997/06/16 16:50:22 roberto Exp roberto $
 */
 
+#ifndef undump_h
+#define undump_h
+
 #include "func.h"
+#include "zio.h"
 
 #define IsMain(f)	(f->lineDefined==0)
 
@@ -15,9 +19,12 @@
 #define ID_VAR		'V'
 #define ID_STR		'S'
 #define	SIGNATURE	"Lua"
-#define	VERSION		0x25		/* 2.5 */
+#define	VERSION		0x25		/* last format change was in 2.5 */
 #define	TEST_WORD	0x1234		/* a word for testing byte ordering */
 #define	TEST_FLOAT	0.123456789e-23	/* a float for testing representation */
 
-TFunc* luaI_undump1(FILE* D);		/* load one chunk */
-int luaI_undump(FILE* D);		/* load all chunks */
+
+TFunc* luaI_undump1(ZIO* Z);
+int luaI_undump(ZIO* Z);		/* load all chunks */
+
+#endif
