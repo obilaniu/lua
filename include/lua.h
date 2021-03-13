@@ -2,15 +2,15 @@
 ** LUA - Linguagem para Usuarios de Aplicacao
 ** Grupo de Tecnologia em Computacao Grafica
 ** TeCGraf - PUC-Rio
-** $Id: lua.h,v 3.27 1996/04/25 14:10:00 roberto Exp roberto $
+** $Id: lua.h,v 3.30 1996/11/07 20:26:08 roberto Exp roberto $
 */
 
 
 #ifndef lua_h
 #define lua_h
 
-#define LUA_VERSION	"Lua 2.4"
-#define LUA_COPYRIGHT	"Copyright (C) 1994, 1995 TeCGraf"
+#define LUA_VERSION	"Lua 2.5"
+#define LUA_COPYRIGHT	"Copyright (C) 1994-1996 TeCGraf"
 #define LUA_AUTHORS 	"W. Celes, R. Ierusalimschy & L. H. de Figueiredo"
 
 
