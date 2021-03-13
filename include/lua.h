@@ -2,12 +2,17 @@
 ** LUA - Linguagem para Usuarios de Aplicacao
 ** Grupo de Tecnologia em Computacao Grafica
 ** TeCGraf - PUC-Rio
-** $Id: lua.h,v 3.15 1995/01/18 20:15:05 celes Exp celes $
+** $Id: lua.h,v 3.20 1995/10/31 16:41:53 roberto Exp roberto $
 */
 
 
 #ifndef lua_h
 #define lua_h
+
+#define LUA_VERSION	"Lua 2.2"
+#define LUA_COPYRIGHT	"Copyright (C) 1994, 1995 TeCGraf"
+#define LUA_AUTHORS 	"W. Celes, R. Ierusalimschy & L. H. de Figueiredo"
+
 
 /* Private Part */
  
@@ -19,6 +24,9 @@ typedef enum
  LUA_T_ARRAY	= -4,
  LUA_T_FUNCTION	= -5,
  LUA_T_CFUNCTION= -6,
+ LUA_T_MARK	= -7,
+ LUA_T_CMARK	= -8,
+ LUA_T_LINE	= -9,
  LUA_T_USERDATA = 0
 } lua_Type;
  
