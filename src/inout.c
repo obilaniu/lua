@@ -5,7 +5,7 @@
 ** Also provides some predefined lua functions.
 */
 
-char *rcs_inout="$Id: inout.c,v 2.68 1997/06/26 20:47:43 roberto Exp roberto $";
+char *rcs_inout="$Id: inout.c,v 2.69 1997/06/27 22:38:49 roberto Exp $";
 
 #include <stdio.h>
 #include <string.h>

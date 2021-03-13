@@ -2,7 +2,7 @@
 ** LUA - An Extensible Extension Language
 ** TeCGraf: Grupo de Tecnologia em Computacao Grafica, PUC-Rio, Brazil
 ** e-mail: lua@tecgraf.puc-rio.br
-** $Id: lua.h,v 4.10 1997/06/19 18:03:04 roberto Exp roberto $
+** $Id: lua.h,v 4.11 1997/06/23 18:27:53 roberto Exp $
 */
 
 

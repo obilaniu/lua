@@ -1,7 +1,7 @@
 /*
 ** hash.h
 ** hash manager for lua
-** $Id: hash.h,v 2.15 1997/03/31 14:02:58 roberto Exp roberto $
+** $Id: hash.h,v 2.16 1997/05/14 18:38:29 roberto Exp $
 */
 
 #ifndef hash_h

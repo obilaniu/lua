@@ -3,7 +3,7 @@
 ** hash manager for lua
 */
 
-char *rcs_hash="$Id: hash.c,v 2.42 1997/05/08 20:43:30 roberto Exp roberto $";
+char *rcs_hash="$Id: hash.c,v 2.43 1997/05/14 18:38:29 roberto Exp $";
 
 
 #include "luamem.h"

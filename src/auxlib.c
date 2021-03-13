@@ -1,4 +1,4 @@
-char *rcs_auxlib="$Id: auxlib.c,v 1.4 1997/04/07 14:48:53 roberto Exp roberto $";
+char *rcs_auxlib="$Id: auxlib.c,v 1.5 1997/04/14 15:30:03 roberto Exp $";
 
 #include <stdio.h>
 #include <stdarg.h>

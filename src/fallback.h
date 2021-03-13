@@ -1,5 +1,5 @@
 /*
-** $Id: fallback.h,v 1.22 1997/04/04 22:24:51 roberto Exp roberto $
+** $Id: fallback.h,v 1.23 1997/04/24 22:59:57 roberto Exp $
 */
  
 #ifndef fallback_h

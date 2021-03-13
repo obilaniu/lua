@@ -3,7 +3,7 @@
 ** Module to control static tables
 */
 
-char *rcs_table="$Id: table.c,v 2.71 1997/06/09 17:28:14 roberto Exp roberto $";
+char *rcs_table="$Id: table.c,v 2.72 1997/06/17 18:09:31 roberto Exp $";
 
 #include "luamem.h"
 #include "auxlib.h"

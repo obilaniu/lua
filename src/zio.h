@@ -1,7 +1,7 @@
 /*
 * zio.h
 * a generic input stream interface
-* $Id: zio.h,v 1.4 1997/06/19 18:55:28 roberto Exp roberto $
+* $Id: zio.h,v 1.5 1997/06/20 19:25:54 roberto Exp $
 */
 
 #ifndef zio_h

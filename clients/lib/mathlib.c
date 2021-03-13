@@ -3,7 +3,7 @@
 ** Mathematics library to LUA
 */
 
-char *rcs_mathlib="$Id: mathlib.c,v 1.24 1997/06/09 17:30:10 roberto Exp roberto $";
+char *rcs_mathlib="$Id: mathlib.c,v 1.25 1997/06/19 18:03:04 roberto Exp $";
 
 #include <stdlib.h>
 #include <math.h>

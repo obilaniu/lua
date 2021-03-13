@@ -1,5 +1,5 @@
 /*
-** $Id: auxlib.h,v 1.2 1997/04/06 14:08:08 roberto Exp roberto $
+** $Id: auxlib.h,v 1.3 1997/04/07 14:48:53 roberto Exp $
 */
 
 #ifndef auxlib_h

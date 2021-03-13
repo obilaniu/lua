@@ -3,7 +3,7 @@
 ** TecCGraf - PUC-Rio
 */
 
-char *rcs_luamem = "$Id: luamem.c,v 1.15 1997/03/31 14:17:09 roberto Exp roberto $";
+char *rcs_luamem = "$Id: luamem.c,v 1.16 1997/04/01 21:23:20 roberto Exp $";
 
 #include <stdlib.h>
 

@@ -1,7 +1,7 @@
 /*
 * zio.c
 * a generic input stream interface
-* $Id: zio.c,v 1.1 1997/06/16 16:50:22 roberto Exp roberto $
+* $Id: zio.c,v 1.2 1997/06/20 19:25:54 roberto Exp $
 */
 
 #include <stdio.h>

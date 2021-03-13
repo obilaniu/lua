@@ -1,7 +1,7 @@
 /*
 ** undump.h
 ** definitions for lua decompiler
-** $Id: undump.h,v 1.5 1997/06/16 16:50:22 roberto Exp roberto $
+** $Id: undump.h,v 1.6 1997/06/17 18:19:17 roberto Exp $
 */
 
 #ifndef undump_h
