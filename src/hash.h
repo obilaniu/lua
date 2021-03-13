@@ -2,7 +2,7 @@
 ** hash.h
 ** hash manager for lua
 ** Luiz Henrique de Figueiredo - 17 Aug 90
-** $Id: hash.h,v 2.7 1994/12/20 21:20:36 roberto Exp roberto $
+** $Id: hash.h,v 2.8 1995/01/12 14:19:04 roberto Exp $
 */
 
 #ifndef hash_h

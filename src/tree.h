@@ -1,7 +1,7 @@
 /*
 ** tree.h
 ** TecCGraf - PUC-Rio
-** $Id: tree.h,v 1.8 1994/12/20 21:20:36 roberto Exp roberto $
+** $Id: tree.h,v 1.9 1995/01/12 14:19:04 roberto Exp $
 */
 
 #ifndef tree_h

@@ -3,7 +3,7 @@
 ** TecCGraf - PUC-Rio
 */
  
-char *rcs_tree="$Id: tree.c,v 1.12 1994/12/20 21:20:36 roberto Exp roberto $";
+char *rcs_tree="$Id: tree.c,v 1.13 1995/01/12 14:19:04 roberto Exp $";
 
 
 #include <string.h>

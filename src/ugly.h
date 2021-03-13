@@ -1,7 +1,7 @@
 /*
 ** ugly.h
 ** TecCGraf - PUC-Rio
-** $Id: $
+** $Id: ugly.h,v 1.2 1994/11/13 14:39:04 roberto Stab $
 */
 
 #ifndef ugly_h

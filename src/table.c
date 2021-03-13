@@ -3,7 +3,7 @@
 ** Module to control static tables
 */
 
-char *rcs_table="$Id: table.c,v 2.27 1995/01/13 22:11:12 roberto Exp celes $";
+char *rcs_table="$Id: table.c,v 2.28 1995/01/18 20:15:54 celes Exp $";
 
 #include <string.h>
 

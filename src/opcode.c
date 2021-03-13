@@ -3,7 +3,7 @@
 ** TecCGraf - PUC-Rio
 */
 
-char *rcs_opcode="$Id: opcode.c,v 3.33 1995/02/02 20:05:37 roberto Exp roberto $";
+char *rcs_opcode="$Id: opcode.c,v 3.34 1995/02/06 19:35:09 roberto Exp $";
 
 #include <setjmp.h>
 #include <stdlib.h>
