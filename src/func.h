@@ -1,5 +1,5 @@
 /*
-** $Id: func.h,v 1.7 1996/03/08 12:04:04 roberto Exp roberto $
+** $Id: func.h,v 1.8 1996/03/14 15:54:20 roberto Exp $
 */
 
 #ifndef func_h

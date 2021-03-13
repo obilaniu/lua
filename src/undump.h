@@ -1,7 +1,7 @@
 /*
 ** undump.h
 ** definitions for lua decompiler
-** $Id: undump.h,v 1.2 1996/03/11 21:59:41 lhf Exp lhf $
+** $Id: undump.h,v 1.3 1996/11/14 11:44:34 lhf Exp $
 */
 
 #include "func.h"

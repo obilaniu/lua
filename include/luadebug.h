@@ -2,7 +2,7 @@
 ** LUA - Linguagem para Usuarios de Aplicacao
 ** Grupo de Tecnologia em Computacao Grafica
 ** TeCGraf - PUC-Rio
-** $Id: luadebug.h,v 1.5 1996/02/08 17:03:20 roberto Exp roberto $
+** $Id: luadebug.h,v 1.6 1996/03/20 17:05:44 roberto Exp $
 */
 
 

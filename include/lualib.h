@@ -2,7 +2,7 @@
 ** Libraries to be used in LUA programs
 ** Grupo de Tecnologia em Computacao Grafica
 ** TeCGraf - PUC-Rio
-** $Id: lualib.h,v 1.9 1996/08/01 14:55:33 roberto Exp roberto $
+** $Id: lualib.h,v 1.10 1996/08/05 20:55:24 roberto Exp $
 */
 
 #ifndef lualib_h

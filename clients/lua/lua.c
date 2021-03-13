@@ -3,7 +3,7 @@
 ** Linguagem para Usuarios de Aplicacao
 */
 
-char *rcs_lua="$Id: lua.c,v 1.13 1996/07/06 20:20:35 roberto Exp roberto $";
+char *rcs_lua="$Id: lua.c,v 1.14 1996/09/24 17:30:28 roberto Exp $";
 
 #include <stdio.h>
 #include <string.h>
