@@ -3,7 +3,7 @@
 ** TecCGraf - PUC-Rio
 */
  
-char *rcs_fallback="$Id: fallback.c,v 1.16 1995/10/17 11:52:38 roberto Exp roberto $";
+char *rcs_fallback="$Id: fallback.c,v 1.17 1995/10/17 14:30:05 roberto Exp $";
 
 #include <stdio.h>
 #include <string.h>

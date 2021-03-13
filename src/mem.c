@@ -3,7 +3,7 @@
 ** TecCGraf - PUC-Rio
 */
 
-char *rcs_mem = "$Id: mem.c,v 1.4 1995/01/13 22:11:12 roberto Exp roberto $";
+char *rcs_mem = "$Id: mem.c,v 1.5 1995/02/06 19:34:03 roberto Exp $";
 
 #include <stdlib.h>
 #include <string.h>
