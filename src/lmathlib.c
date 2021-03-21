@@ -1,5 +1,5 @@
 /*
-** $Id: lmathlib.c,v 1.82 2013/01/29 16:00:40 roberto Exp roberto $
+** $Id: lmathlib.c,v 1.83 2013/03/07 18:21:32 roberto Exp $
 ** Standard mathematical library
 ** See Copyright Notice in lua.h
 */

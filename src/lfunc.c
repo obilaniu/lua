@@ -1,5 +1,5 @@
 /*
-** $Id: lfunc.c,v 2.29 2012/05/08 13:53:33 roberto Exp roberto $
+** $Id: lfunc.c,v 2.30 2012/10/03 12:36:46 roberto Exp $
 ** Auxiliary functions to manipulate prototypes and closures
 ** See Copyright Notice in lua.h
 */
