@@ -1,5 +1,5 @@
 /*
-** $Id: lctype.h,v 1.11 2011/06/27 18:22:46 roberto Exp roberto $
+** $Id: lctype.h $
 ** 'ctype' functions for Lua
 ** See Copyright Notice in lua.h
 */
@@ -68,7 +68,7 @@
 
 
 /* two more entries for 0 and -1 (EOZ) */
-LUAI_DDEC const lu_byte luai_ctype_[UCHAR_MAX + 2];
+LUAI_DDEC(const lu_byte luai_ctype_[UCHAR_MAX + 2];)
 
 
 #else			/* }{ */
