@@ -1,5 +1,5 @@
 /*
-** $Id: llex.c,v 2.60 2012/01/20 18:35:36 roberto Exp roberto $
+** $Id: llex.c,v 2.62 2012/12/05 19:57:00 roberto Exp roberto $
 ** Lexical Analyzer
 ** See Copyright Notice in lua.h
 */
@@ -73,16 +73,16 @@ void luaX_init (lua_State *L) {
 
 
 const char *luaX_token2str (LexState *ls, int token) {
-  if (token < FIRST_RESERVED) {
+  if (token < FIRST_RESERVED) {  /* single-byte symbols? */
     lua_assert(token == cast(unsigned char, token));
     return (lisprint(token)) ? luaO_pushfstring(ls->L, LUA_QL("%c"), token) :
                               luaO_pushfstring(ls->L, "char(%d)", token);
   }
   else {
     const char *s = luaX_tokens[token - FIRST_RESERVED];
-    if (token < TK_EOS)
+    if (token < TK_EOS)  /* fixed format (symbols and reserved words)? */
       return luaO_pushfstring(ls->L, LUA_QS, s);
-    else
+    else  /* names, strings, and numerals */
       return s;
   }
 }
@@ -313,7 +313,7 @@ static int readhexaesc (LexState *ls) {
   int c[3], i;  /* keep input for error message */
   int r = 0;  /* result accumulator */
   c[0] = 'x';  /* for error message */
-  for (i = 1; i < 3; i++) {  /* read two hexa digits */
+  for (i = 1; i < 3; i++) {  /* read two hexadecimal digits */
     c[i] = next(ls);
     if (!lisxdigit(c[i]))
       escerror(ls, c, i + 1, "hexadecimal digit expected");

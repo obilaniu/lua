@@ -1,5 +1,5 @@
 /*
-** $Id: lstring.c,v 2.23 2012/03/28 18:28:25 roberto Exp roberto $
+** $Id: lstring.c,v 2.25 2012/10/02 17:41:50 roberto Exp roberto $
 ** String table (keeps all strings handled by Lua)
 ** See Copyright Notice in lua.h
 */
@@ -49,7 +49,7 @@ int luaS_eqstr (TString *a, TString *b) {
 
 
 unsigned int luaS_hash (const char *str, size_t l, unsigned int seed) {
-  unsigned int h = seed ^ l;
+  unsigned int h = seed ^ cast(unsigned int, l);
   size_t l1;
   size_t step = (l >> LUAI_HASHLIMIT) + 1;
   for (l1 = l; l1 >= step; l1 -= step)
@@ -139,7 +139,7 @@ static TString *internshrstr (lua_State *L, const char *str, size_t l) {
        o = gch(o)->next) {
     TString *ts = rawgco2ts(o);
     if (h == ts->tsv.hash &&
-        ts->tsv.len == l &&
+        l == ts->tsv.len &&
         (memcmp(str, getstr(ts), l * sizeof(char)) == 0)) {
       if (isdead(G(L), o))  /* string is dead (but was not collected yet)? */
         changewhite(o);  /* resurrect it */
