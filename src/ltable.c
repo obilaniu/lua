@@ -1,5 +1,5 @@
 /*
-** $Id: ltable.c,v 2.99 2014/11/02 19:19:04 roberto Exp roberto $
+** $Id: ltable.c,v 2.100 2015/01/05 13:52:37 roberto Exp $
 ** Lua tables (hash)
 ** See Copyright Notice in lua.h
 */

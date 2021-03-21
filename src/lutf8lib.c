@@ -1,5 +1,5 @@
 /*
-** $Id: lutf8lib.c,v 1.12 2014/10/15 14:31:10 roberto Exp roberto $
+** $Id: lutf8lib.c,v 1.13 2014/11/02 19:19:04 roberto Exp $
 ** Standard library for UTF-8 manipulation
 ** See Copyright Notice in lua.h
 */

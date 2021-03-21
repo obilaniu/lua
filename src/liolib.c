@@ -1,5 +1,5 @@
 /*
-** $Id: liolib.c,v 2.141 2014/11/21 12:17:33 roberto Exp roberto $
+** $Id: liolib.c,v 2.142 2015/01/02 12:50:28 roberto Exp $
 ** Standard I/O (and system) library
 ** See Copyright Notice in lua.h
 */
