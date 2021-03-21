@@ -1,5 +1,5 @@
 /*
-** $Id: lstate.h,v 2.80 2012/05/22 17:50:39 roberto Exp roberto $
+** $Id: lstate.h,v 2.81 2012/06/08 15:14:04 roberto Exp $
 ** Global State
 ** See Copyright Notice in lua.h
 */

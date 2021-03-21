@@ -1,5 +1,5 @@
 /*
-** $Id: ldo.c,v 2.104 2012/05/08 13:53:33 roberto Exp roberto $
+** $Id: ldo.c,v 2.105 2012/06/08 15:14:04 roberto Exp $
 ** Stack and Call structure of Lua
 ** See Copyright Notice in lua.h
 */
