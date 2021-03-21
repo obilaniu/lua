@@ -1,5 +1,5 @@
 /*
-** $Id: lobject.h,v 2.63 2011/10/17 14:46:13 roberto Exp roberto $
+** $Id: lobject.h,v 2.64 2011/10/31 17:48:22 roberto Exp $
 ** Type definitions for Lua objects
 ** See Copyright Notice in lua.h
 */
