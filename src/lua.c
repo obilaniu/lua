@@ -1,5 +1,5 @@
 /*
-** $Id: lua.c,v 1.225 2015/03/30 15:42:59 roberto Exp roberto $
+** $Id: lua.c,v 1.226 2015/08/14 19:11:20 roberto Exp $
 ** Lua stand-alone interpreter
 ** See Copyright Notice in lua.h
 */
