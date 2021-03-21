@@ -1,5 +1,5 @@
 /*
-** $Id: luaconf.h,v 1.253 2015/06/24 18:23:57 roberto Exp roberto $
+** $Id: luaconf.h,v 1.254 2015/10/21 18:17:40 roberto Exp $
 ** Configuration file for Lua
 ** See Copyright Notice in lua.h
 */

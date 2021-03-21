@@ -1,5 +1,5 @@
 /*
-** $Id: lstrlib.c,v 1.238 2015/11/23 11:31:21 roberto Exp roberto $
+** $Id: lstrlib.c,v 1.239 2015/11/25 16:28:17 roberto Exp $
 ** Standard library for string operations and pattern-matching
 ** See Copyright Notice in lua.h
 */

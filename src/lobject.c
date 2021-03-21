@@ -1,5 +1,5 @@
 /*
-** $Id: lobject.c,v 2.107 2015/11/02 14:02:35 roberto Exp roberto $
+** $Id: lobject.c,v 2.108 2015/11/02 16:09:30 roberto Exp $
 ** Some generic functions over Lua objects
 ** See Copyright Notice in lua.h
 */
