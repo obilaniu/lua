@@ -1,0 +1,21 @@
+option('install_lua',     type: 'feature', value: 'auto',
+       description: 'Whether to install the Lua interpreter')
+option('install_luac',    type: 'feature', value: 'auto',
+       description: 'Whether to install the Lua compiler')
+option('install_liblua',  type: 'feature', value: 'auto',
+       description: 'Whether to install the Lua library')
+option('install_headers', type: 'feature', value: 'auto',
+       description: 'Whether to install the Lua headers')
+option('install_manuals', type: 'feature', value: 'auto',
+       description: 'Whether to install the Lua manuals')
+option('install_pkgconfig', type: 'feature', value: 'auto',
+       description: 'Whether to install the Lua pkg-config files')
+option('lua53compat',     type: 'boolean', value: true,
+       description: 'Whether to enable Lua 5.3 compatibility')
+option('dlopen',          type: 'feature', value: 'auto',
+       description: 'Whether to enable dlopen()')
+option('threads',         type: 'boolean', value: false,
+       description: 'Whether to link with threading libraries')
+option('lineedit',        type: 'combo',   value: 'none',
+       choices: ['none', 'readline', 'edit'],
+       description: 'Choice of line-editing library.')
