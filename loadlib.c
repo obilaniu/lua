@@ -621,6 +621,60 @@ static int searcher_preload (lua_State *L) {
 }
 
 
+static int searcher_static (lua_State* L) {
+  const char *name = luaL_checkstring(L, 1);
+#define CONCAT(x,y)  x ## y
+#define CONCAT_(x,y) CONCAT(x,y)
+#ifdef  LUA_STATIC_SEARCH_ARRAY_TEXT
+#define TEXTARRAY(n) CONCAT_(LUA_STATIC_SEARCH_ARRAY_TEXT, n)
+  do{
+    typedef struct{
+      const char* name;
+      const char* start;
+      const char* end;
+    } text_entry;
+    const text_entry* lib;
+    extern const text_entry TEXTARRAY(_start)[];
+    extern const text_entry TEXTARRAY(_end)[];
+    for (lib = TEXTARRAY(_start); lib < TEXTARRAY(_end); lib++) {
+      if (strcmp(lib->name, name) == 0) { /* hit? */
+        int stat = luaL_loadbuffer(L, lib->start, lib->end-lib->start, name);
+        if (l_likely(stat == LUA_OK)) {
+          lua_pushliteral(L, ":static_search_Lua:");
+          return 2;
+        }
+        else {
+          lua_pushfstring(L, "error loading statically-linked module '%s':\n"
+                             "\t%s", name, lua_tostring(L, -1));
+          return 1;
+        }
+      }
+    }
+  }while(0);
+#endif
+#ifdef  LUA_STATIC_SEARCH_ARRAY_CODE
+#define CODEARRAY(n) CONCAT_(LUA_STATIC_SEARCH_ARRAY_CODE, n)
+  do{
+    const luaL_Reg* lib;
+    extern const luaL_Reg CODEARRAY(_start)[];
+    extern const luaL_Reg CODEARRAY(_end)[];
+    for (lib = CODEARRAY(_start); lib < CODEARRAY(_end); lib++) {
+      if (strcmp(lib->name, name) == 0) { /* hit? */
+        lua_pushcfunction(L, lib->func);
+        lua_pushliteral(L, ":static_search_C:");
+        return 2;
+      }
+    }
+  }while(0);
+#endif
+#undef TEXTARRAY
+#undef CODEARRAY
+#undef CONCAT_
+#undef CONCAT
+  lua_pushfstring(L, "no module '%s' statically linked in", name);
+  return 1;
+}
+
 static void findloader (lua_State *L, const char *name) {
   int i;
   luaL_Buffer msg;  /* to build error message */
@@ -710,6 +764,7 @@ static const luaL_Reg ll_funcs[] = {
 static void createsearcherstable (lua_State *L) {
   static const lua_CFunction searchers[] = {
     searcher_preload,
+    searcher_static,
     searcher_Lua,
     searcher_C,
     searcher_Croot,
