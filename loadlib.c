@@ -612,6 +612,12 @@ static int searcher_preload (lua_State *L) {
 }
 
 
+static int searcher_static (lua_State* L) {
+  const char *name = luaL_checkstring(L, 1);
+  lua_pushfstring(L, "no module '%s' statically linked in", name);
+  return 1;
+}
+
 static void findloader (lua_State *L, const char *name) {
   int i;
   luaL_Buffer msg;  /* to build error message */
@@ -701,6 +707,7 @@ static const luaL_Reg ll_funcs[] = {
 static void createsearcherstable (lua_State *L) {
   static const lua_CFunction searchers[] = {
     searcher_preload,
+    searcher_static,
     searcher_Lua,
     searcher_C,
     searcher_Croot,
