@@ -8,6 +8,9 @@
 #define lstate_h
 
 #include "lua.h"
+#if defined(LUA_USE_THREADING)
+#include <pthread.h>
+#endif
 
 
 /* Some header files included here need this definition */
@@ -300,6 +303,10 @@ typedef struct global_State {
   TString *strcache[STRCACHE_N][STRCACHE_M];  /* cache for strings in API */
   lua_WarnFunction warnf;  /* warning function */
   void *ud_warn;         /* auxiliary data to 'warnf' */
+#if defined(LUA_USE_THREADING)
+  pthread_mutex_t lock;  /* global state lock */
+  pthread_cond_t  cond;  /* global state condvar */
+#endif
 } global_State;
 
 

@@ -260,7 +260,12 @@ typedef l_uint32 Instruction;
 ** macros that are executed whenever program enters the Lua core
 ** ('lua_lock') and leaves the core ('lua_unlock')
 */
-#if !defined(lua_lock)
+#if defined(LUA_USE_THREADING)
+#undef lua_lock
+#undef lua_unlock
+LUAI_FUNC int lua_lock(lua_State *L);
+LUAI_FUNC int lua_unlock(lua_State *L);
+#elif !defined(lua_lock)
 #define lua_lock(L)	((void) 0)
 #define lua_unlock(L)	((void) 0)
 #endif
