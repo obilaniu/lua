@@ -193,7 +193,10 @@ static int pmain(lua_State* L)
  return 0;
 }
 
-int main(int argc, char* argv[])
+#ifndef  main_luac
+# define main_luac main
+#endif
+int main_luac(int argc, char* argv[])
 {
  lua_State* L;
  int i=doargs(argc,argv);
